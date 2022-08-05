@@ -1,5 +1,5 @@
 public class ContaPoupanca {
-    public int agencia; 
-    public int numero; 
-    public int saldo;
+    private int agencia; 
+    private int numero; 
+    private int saldo;
 }
