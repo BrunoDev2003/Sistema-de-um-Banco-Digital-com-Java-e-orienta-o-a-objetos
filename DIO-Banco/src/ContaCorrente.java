@@ -1,36 +1,5 @@
-public class ContaCorrente {
-    private int agencia; 
-    private int numero; 
-    private int saldo;
-
-    public void sacar() {
-
-    }
-
-    public void depositar() {
-
-    }
-
-
-    public void transferir() {
-        
-    }
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public void setAgencia(int agencia) {
-        this.agencia = agencia;
-    }
-
-    public int getNumero() {
-        return numero;
-    }
-
-    public int getSaldo() {
-        return saldo;
-    }
+public class ContaCorrente extends Conta {
+    
 
     
 }
