@@ -22,7 +22,7 @@ public abstract class Conta implements IConta {
         saldo -= valor;
         
     }
-
+    
     @Override
     public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
