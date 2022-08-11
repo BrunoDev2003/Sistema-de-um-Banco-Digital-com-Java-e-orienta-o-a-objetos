@@ -5,4 +5,6 @@ public interface IConta {
 
 
     public void transferir(Conta contaDestino);
+
+    void imprimirExtrato();
 }
