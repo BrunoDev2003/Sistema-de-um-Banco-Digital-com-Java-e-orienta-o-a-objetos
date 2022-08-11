@@ -17,12 +17,18 @@ public class ContaCorrente extends Conta {
     @Override
     public void imprimirExtrato() {
         System.out.println("Extrato conta corrente");
-        System.out.println(String.format("Agencia %d", super.agencia));
-        System.out.println(String.format("Numero %d", super.numero));
-        System.out.println(String.format("saldo %.2f", super.saldo));
+        imprimirInfosComuns();
         
         
     }
+
+    @Override
+    public void depositar(double valor) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    
 
     
 

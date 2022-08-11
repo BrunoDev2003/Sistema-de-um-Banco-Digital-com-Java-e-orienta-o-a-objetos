@@ -12,7 +12,7 @@ public abstract class Conta implements IConta {
 
 
     @Override
-    public void depositar(double valor) {
+    public void depositar(double valor, Conta corrente) {
         saldo += valor;
         
     }
@@ -43,5 +43,11 @@ public abstract class Conta implements IConta {
 
     public int getSaldo() {
         return saldo;
+    }
+
+    protected void imprimirInfosComuns() {
+        System.out.println(String.format("Agencia %d", this.agencia));
+        System.out.println(String.format("Numero %d", this.numero));
+        System.out.println(String.format("saldo %.2f", this.saldo));
     }
 }
