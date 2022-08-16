@@ -1,8 +1,10 @@
 public class Main {
     public static void main(String[] args) {
-        Conta cc = new ContaCorrente();
-        Conta poupanca = new ContaPoupanca();
-        Conta corrente = new ContaCorrente();
+        Cliente bruno = new Cliente();
+        bruno.setNome("bruno");
+        Conta cc = new ContaCorrente(bruno);
+        Conta poupanca = new ContaPoupanca(bruno);
+        Conta corrente = new ContaCorrente(bruno);
 
         cc.transferir(100, poupanca);
         cc.depositar(200,corrente);
